@@ -1,0 +1,61 @@
+.wrapper{
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+
+}
+#contact{
+background: #484848;
+width:100%;
+overflow:hidden;
+}
+.contactme{
+	height:200px;
+	line-height: 200px;
+	text-align:center;
+	margin:-50px 0 0 30px;
+	font-size:30px;
+	font-weight: bold;
+}
+.contact-group{
+margin-left:30px;
+}
+.menu, .contactinfo, .social, .info{
+	width:25%;
+	float:left;
+	height:300px;
+}
+#contact img{
+	width:50px;
+	height:50px;
+	margin:0;
+	margin-bottom: 10px;
+
+}
+#contact ul{
+	text-decoration:none;
+	list-style-type: none;
+	}
+	#contact{
+		color:white;
+		font-family: 'Quicksand', sans-serif;
+	}
+.emailAdd, .phonnum{
+	float:right;
+	line-height: 50px;
+	margin-right:20px;
+}
+.phonnum{
+	float:right;
+	line-height: 50px;
+	margin-right:70px;
+}
+.menu a{
+	text-decoration-line:none;
+	color:white;
+}
+.copyright{
+	clear:both;
+	text-align:center;
+	margin-bottom:10px;
+}
