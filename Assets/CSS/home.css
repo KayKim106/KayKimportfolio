@@ -2,7 +2,9 @@ body{
 	margin:0;
 	height:100%;
 	width:100%;
-
+}
+a{
+    text-decoration: none;
 }
 header{
     position:absolute;
@@ -15,6 +17,7 @@ nav{
 	width:100%;
 	padding-bottom:10px;
     color:white;
+
 	}
 	.logo{
 		height:80px;
@@ -101,6 +104,7 @@ nav{
 .addBtn {
 	font-size:25px;
 	text-align:center;
+    color:white;
 	font-family: 'Quicksand', sans-serif;	
 }
 
@@ -121,7 +125,8 @@ nav{
 .profileContainer {
     width: 1000px;
     height: 400px;
-   border:1px solid grey;
+   border:5px solid tomato;
+   border-radius:10px 10px 10px 10px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -204,31 +209,31 @@ h2{
 
 #HTML5bar,
 #cssbar {
-    width: 85%;
+    width: 90%;
 }
 
 #javascriptbar {
-    width: 68%;
+    width: 80%;
 }
 #nodebar {
-    width: 60%;
+    width: 70%;
 }
 #sassbar {
-    width: 15%;
+    width: 70%;
 }
 #mysqlbar {
 
-    width: 15%;
+    width: 75%;
 }
-#mysqlbar:hover {
+/* #mysqlbar:hover {
     width: 80%;
     transition: 2s;
-    /*may be the click button for move all the element at one time*/
+    may be the click button for move all the element at one time
 }
 #sassbar:hover {
     width: 70%;
     transition: 2s;
-}
+} */
 
 .skillList {
     margin-left: 10px;
@@ -250,12 +255,15 @@ h2{
     width:100%;
     height:auto;
     margin:0 auto;
-
+    background: #484848;
+    overflow:hidden;
 }
 #contact{
 background: #484848;
-width:100%;
+width:1200px;
+margin:0 auto;
 overflow:hidden;
+
 }
 .contactme{
     height:200px;
@@ -268,11 +276,20 @@ overflow:hidden;
 .contact-group{
 margin-left:50px;
 }
-.menu, .contactinfo, .social, .info{
+.menu, .social, .info{
     width:20%;
     float:left;
     height:300px;
     font-family: 'Roboto', sans-serif;
+}
+.contactinfo{
+     width:10%;
+    float:left;
+    height:300px;
+    font-family: 'Roboto', sans-serif;
+}
+.menu a:hover{
+    color:orange;
 }
 
 #contact img{
@@ -304,14 +321,18 @@ margin-left:50px;
     text-decoration-line:none;
     color:white;
 }
+.menu li{
+    margin-bottom:10px;
+}
 .copyright{
     clear:both;
     text-align:center;
     margin-bottom:10px;
 }
 .contact-group img:hover{
-    transition:1s;
-    transform:rotate(30deg);
+    transition:0.8s;
+    transform:rotate(360deg);
+
 
 }
  .contact-group img{
@@ -335,30 +356,58 @@ margin-left:50px;
     overflow:hidden;
     position:relative;
 }
-/* .project-inner-container{
-    margin:0 auto;
-    background:white;
-    width:1200px;
-    height:600px;
-    margin-top:50px;
-} 
+
 .project-display-one {
-    margin:0 auto;
-    width:400px;
-    height:400px;
-    background: grey;
-}*/
-  .project-container div{
-    width:500px;
+     width:500px;
     height:500px;
     background:white;
     margin:0 auto;
     float:left;
     margin-left:67px;
     margin-top:50px;
-    border-radius:5px 5px 5px 5px;
-    
-    } 
+    border-radius:0 0 10px 10px;
+    position:relative;
+}
+.project-display-two {
+     width:500px;
+    height:500px;
+    background:white;
+    margin:0 auto;
+    float:left;
+    margin-left:67px;
+    margin-top:50px;
+    border-radius:0 0 10px 10px;
+    position:relative;
+}
+.overlay{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: tomato;
+}
+.project-display-two:hover .overlay{
+    opacity:1;
+}
+.project-display-one:hover .overlay{
+    opacity:1;
+}
+/*   .project-container div{
+  width:500px;
+  height:500px;
+  background:white;
+  margin:0 auto;
+  float:left;
+  margin-left:67px;
+  margin-top:50px;
+  border-radius:5px 5px 5px 5px;
+  
+  }  */
 
     .sperate-line{
         width:100%;
@@ -373,3 +422,52 @@ margin-left:50px;
     }
 
 /*project end*/
+
+
+/*auto typing */
+    .typed::after {
+    content: '|';
+    display: inline;
+
+    animation: blink 0.7s infinite;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.project-description-one, .project-description-two {
+    width:450px;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.project-description-one h3{
+    color:#B50000;
+}
+.project-description-two h3{
+    color:tomato;
+}
+.project-description-one li, .project-description-two li{
+    font-size:13px;
+}
+
+.contactinfo-detail{
+    width:300px;
+   margin-left:-50px;
+   margin-top:45px;
+   line-height: 60px;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+}
+.contactinfo-detail li{
+    width:300px;
+}

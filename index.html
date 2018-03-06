@@ -3,12 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>main</title>
+    <title>Kay Kim</title>
     <link rel="stylesheet" href="Assets/CSS/home.css">
+    <link rel="stylesheet" href="">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+
+   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+      <script src="Assets/javascript/typed.js"></script>
+
 </head>
 
 <body>
+
     <div class="home-Wrapper" id="home-Wrapper">
         <div class="main-video">
             <video autoplay muted loop>
@@ -32,19 +40,12 @@
         </div>
     </nav>
     </header>
-   <!--  <section class="main-banner"> -->
-        <!-- <div class="main-video">
-            <video autoplay muted loop>
-                <source src="Assets/images/background.mp4" type="video/mp4">
-            </video>
-        </div> -->
-        <!-- </div> -->
         <div class="addBtn-container">
-                <div class="addBtn" type="button">
+               <a href="#profileWrapper"> <div class="addBtn" type="button">
                     Click Me!
-                </div>
+                </div></a>
         </div>
-    </section> 
+    </div> 
     
     <!-- profile start -->
     <div class="profileWrapper" id="profileWrapper">
@@ -54,7 +55,9 @@
         <div class="profileContainer">
             <div class="myImage"><img src="Assets/images/kaykim.jpg" alt=""></div>
             <div class="profile">
-                <p>Hello! My name is Kay Kim and I am a Web developer with System Engineering background.</p>
+                
+                <h3>Hello! I am <span class="typed"></span></h3>
+                
             </div>
             <div class="skills">
                 <div class="skillList">
@@ -86,8 +89,31 @@
         <div class="project-title"><h2>Projects</h2></div>
        
         <div class="project-container">
-            <div class="project-display-one"></div>
-            <div class="project-display-two"></div>
+            <div class="project-display-one">
+                <img src="Assets/images/secondProject.png" alt="secondProject" style="width:500px">
+           <a href="https://kaykim106.github.io/Pizza/"><div class="overlay"><div class="text">Click to View</div></div></a><br>
+           <div class="project-description-one">
+           <h3>PizzR</h3>
+           <p>PizzR is a pizza location finder based on your device's IP address. It finds out the closest pizza places and displays the location info by Google Map.
+            <ul>
+                <li>Built the front page by using HTML5,CSS,Javascript and Ajax.</li>
+                <li>Used Yelp API to get restaurant information and brought location info from Google Map API</li>
+                
+            </ul></p></div>
+            </div>
+            <div class="project-display-two">
+                <img src="Assets/images/firstProject.png" alt="firstProject" style="width:500px">
+                 <a href="https://kaykim106.github.io/weather/"><div class="overlay"><div class="text">Click to View</div></div></a>
+                  <div class="project-description-two">
+           <h3>Today Weather</h3>
+           <p>Today Weather is a weather finder with city and country code. It searches over 4,000 locations' weather based on "openweathermap" and provides Celsius, Fahrenheit temperature and location Map info as well. 
+            <ul>
+                <li>Created by using HTML5, CSS, Javascript and bootstrap.</li>
+                <li>Implemented Openweathermap API and Google Map API for getting data from</li>
+            </ul>
+                
+        </p></div>
+            </div>
         </div>
         <div class="sperate-line">  
         </div>
@@ -117,14 +143,21 @@
         <div class="contactinfo" id="contactinfo">
             <h3>Contact</h3>
             <ul>
-                <span><li><a href="mailto:kaykim106@gmail.com"><img src="Assets/images/icons/email.png" alt="Email"></a>
+                <li><a href="mailto:kaykim106@gmail.com"><img src="Assets/images/icons/email.png" alt="Email"></a>
                     </li>
-                <li><a href="19292825837"><img src="Assets/images/icons/phone.png" alt="Phone"></a>
+                <span><li><a href=""><img src="Assets/images/icons/phone.png" alt="Phone"></a>
                     </li>
             </ul>
-            
         </div>
-        <div class="copyright">Copyright 2018</div>
+        <div class="contactinfo-detail">
+            <ul>
+            <li>kaykim106@gmail.com</li>
+           
+            <li>+1 929-282-5837</li>
+            </ul>
+        </div>
+        
+        <div class="copyright">Copyright Kay Kim 2018</div>
      
         
         </div>
