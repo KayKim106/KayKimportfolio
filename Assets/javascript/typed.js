@@ -1,6 +1,6 @@
         $(function(){
     $(".typed").typed({
-        strings: [" Kay Kim and I am a Web developer with System Engineering background.","Developer.", "Designer.", "People."],
+        strings: ["HTML5", "CSS3","Bootstrap","Javascript"],
 
          
         // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)

@@ -22,7 +22,14 @@ nav{
 	.logo{
 		height:80px;
 		width:100%;
+        margin:0 auto;
 	}
+    .logo-title{
+        text-align:center;
+        margin-top:0;
+        font-size:15px;
+        font-family: 'Quicksand', sans-serif;
+    }
 	.nav-list{
 		height:50px;
 		width:100%;
@@ -43,6 +50,7 @@ nav{
 .logo-image{
 	text-align:center;
 	font-size:30px;
+    margin-top:20px;
 	font-family: 'Quicksand', sans-serif;
 }
 .list li{

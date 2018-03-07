@@ -5,59 +5,60 @@
     <meta charset="UTF-8">
     <title>Kay Kim</title>
     <link rel="stylesheet" href="Assets/CSS/home.css">
-    <link rel="stylesheet" href="">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-
-   
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-      <script src="Assets/javascript/typed.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="Assets/javascript/typed.js"></script>
+    <script src="Assets/javascript/smoothScroll.js"></script>
 </head>
 
-<body>
 
+<body>
     <div class="home-Wrapper" id="home-Wrapper">
         <div class="main-video">
-            <video autoplay muted loop>
-                <source src="Assets/images/background.mp4" type="video/mp4">
-            </video>
+         
+
+            <video autoplay muted loop >
+  <source src="Assets/images/frontpagevideo.mov" type="video/mp4">
+</video>
+
+
         </div>
-    <header>
-    <nav>
-        <div class="logo">
-            <div class="logo-image"><b>Kay Kim</b></div>
-        </div>
-        <div class="nav-list">
-            <div class="list">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#profileWrapper">Profile</a></li>
-                    <li><a href="#project-wrapper">Projects</a></li>
-                    <li><a href="#contactinfo">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </header>
+        <header>
+            <nav>
+                <div class="logo">
+                    <div class="logo-image"><b>Kay Kim</b></div>
+                    <div class="logo-title">Web Developer</div>
+                </div>
+                <div class="nav-list">
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#profileWrapper">Profile</a></li>
+                            <li><a href="#project-wrapper">Projects</a></li>
+                            <li><a href="#contactinfo">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <div class="addBtn-container">
-               <a href="#profileWrapper"> <div class="addBtn" type="button">
+            <a href="#profileWrapper">
+                <div class="addBtn" type="button">
                     Click Me!
-                </div></a>
+                </div>
+            </a>
         </div>
-    </div> 
-    
+    </div>
     <!-- profile start -->
     <div class="profileWrapper" id="profileWrapper">
         <div class="profileName">
-            <h2>Profile</h2>
+            <h2>PROFILE</h2>
         </div>
         <div class="profileContainer">
             <div class="myImage"><img src="Assets/images/kaykim.jpg" alt=""></div>
             <div class="profile">
-                
-                <h3>Hello! I am <span class="typed"></span></h3>
-                
+                <h3>I'm a Web Developer with expertise in : <span class="typed"></span></h3>
             </div>
             <div class="skills">
                 <div class="skillList">
@@ -86,66 +87,83 @@
     <!--Profile End-->
     <!--project Start -->
     <section class="project-wrapper" id="project-wrapper">
-        <div class="project-title"><h2>Projects</h2></div>
-       
+        <div class="project-title">
+            <h2>PROJECTS</h2></div>
         <div class="project-container">
             <div class="project-display-one">
                 <img src="Assets/images/secondProject.png" alt="secondProject" style="width:500px">
-           <a href="https://kaykim106.github.io/Pizza/"><div class="overlay"><div class="text">Click to View</div></div></a><br>
-           <div class="project-description-one">
-           <h3>PizzR</h3>
-           <p>PizzR is a pizza location finder based on your device's IP address. It finds out the closest pizza places and displays the location info by Google Map.
-            <ul>
-                <li>Built the front page by using HTML5,CSS,Javascript and Ajax.</li>
-                <li>Used Yelp API to get restaurant information and brought location info from Google Map API</li>
-                
-            </ul></p></div>
+                <a href="https://kaykim106.github.io/Pizza/">
+                    <div class="overlay">
+                        <div class="text">Click to View</div>
+                    </div>
+                </a>
+                <br>
+                <div class="project-description-one">
+                    <h3>PizzR</h3>
+                    <p>PizzR is a pizza location finder based on your device's IP address. It finds out the closest pizza places and displays the location info by Google Map.
+                        <ul>
+                            <li>Built the front page by using HTML5,CSS,Javascript and Ajax.</li>
+                            <li>Used Yelp API to get restaurant information and brought location info from Google Map API</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
             <div class="project-display-two">
                 <img src="Assets/images/firstProject.png" alt="firstProject" style="width:500px">
-                 <a href="https://kaykim106.github.io/weather/"><div class="overlay"><div class="text">Click to View</div></div></a>
-                  <div class="project-description-two">
-           <h3>Today Weather</h3>
-           <p>Today Weather is a weather finder with city and country code. It searches over 4,000 locations' weather based on "openweathermap" and provides Celsius, Fahrenheit temperature and location Map info as well. 
-            <ul>
-                <li>Created by using HTML5, CSS, Javascript and bootstrap.</li>
-                <li>Implemented Openweathermap API and Google Map API for getting data from</li>
-            </ul>
-                
-        </p></div>
+                <a href="https://kaykim106.github.io/weather/">
+                    <div class="overlay">
+                        <div class="text">Click to View</div>
+                    </div>
+                </a>
+                <div class="project-description-two">
+                    <h3>Today's Weather</h3>
+                    <p>Today's Weather is a weather finder with city and country code. It searches over 4,000 locations' weather based on "openweathermap" and provides Celsius, Fahrenheit temperature and location's map info as well.
+                        <ul>
+                            <li>Created by using HTML5, CSS, Javascript and bootstrap.</li>
+                            <li>Implemented Openweathermap API and Google Map API for getting data from</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="sperate-line">  
+        <div class="sperate-line">
         </div>
     </section>
     <!--project end-->
     <!-- contact Start-->
     <div class="wrapper">
-<section id="contact">
-        <div class="contactme">Let's be Friends!</div>
-        <div class="contact-group">
-        <div class="menu">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="#home-Wrapper">Home</a></li>
-                <li><a href="#profileWrapper">About Me</a></li>
-                <li><a href="#project-wrapper">Projects</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <h3>Social</h3>
-            <ul>
-                <li><div><a href="https://github.com/KayKim106" target="_black"><img src="Assets/images/Icons/git.png" alt="Github"></a></div></li>
-                <li><div><a href="https://stackoverflow.com/users/8722569/kim-y-kay-kim" target="_black"><img src="Assets/images/Icons/stack.png" alt="StackOverFlow"></a></div></li>
-                <li><div><a href="https://www.linkedin.com/in/kay-kim-93139ba4/" target="_black"><img src="Assets/images/Icons/linked.png" alt="linkedin"></a></div></li>
-            </ul>
-        </div>
-        <div class="contactinfo" id="contactinfo">
-            <h3>Contact</h3>
-            <ul>
-                <li><div><a href="mailto:kaykim106@gmail.com"><img src="Assets/images/Icons/email.png" alt="Email"></a></div>
-                    </li>
-                <span><div><li><a href="#"><img src="Assets/images/Icons/phone.png" alt="Phone"></a></div>
+        <section id="contact">
+            <div class="contactme">Let's be Friends!</div>
+            <div class="contact-group">
+                <div class="menu">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#home-Wrapper">Home</a></li>
+                        <li><a href="#profileWrapper">About Me</a></li>
+                        <li><a href="#project-wrapper">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <ul>
+                        <li>
+                            <div><a href="https://github.com/KayKim106" target="_black"><img src="Assets/images/Icons/git.png" alt="Github"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="https://stackoverflow.com/users/8722569/kim-y-kay-kim" target="_black"><img src="Assets/images/Icons/stack.png" alt="StackOverFlow"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="https://www.linkedin.com/in/kay-kim-93139ba4/" target="_black"><img src="Assets/images/Icons/linked.png" alt="linkedin"></a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactinfo" id="contactinfo">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <div><a href="mailto:kaykim106@gmail.com"><img src="Assets/images/Icons/email.png" alt="Email"></a></div>
+                        </li>
+                        <span><div><li><a href="#"><img src="Assets/images/Icons/phone.png" alt="Phone"></a></div>
                     </li>
             </ul>
         </div>
@@ -163,6 +181,10 @@
         </div>
     </section>
 </div>
+
+
+
+
     <!-- contact end-->
 </body>
 
